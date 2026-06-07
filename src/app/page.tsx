@@ -291,40 +291,49 @@ export default function Home() {
         </div>
       </section>
       {/* Footer */}
-<footer className="bg-green-950 px-6 py-10 text-white">
-  <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
-    <div>
-      <h3 className="text-xl font-bold">Gulfport Nutrition</h3>
-      <p className="mt-2 text-sm text-white/70">
-        Healthy shakes, loaded teas, and wellness support in Gulfport, MS.
-      </p>
-    </div>
+      <footer className="bg-green-950 px-6 py-10 text-white">
+        <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h3 className="text-xl font-bold">Gulfport Nutrition</h3>
+            <p className="mt-2 text-sm text-white/70">
+              Healthy shakes, loaded teas, and wellness support in Gulfport, MS.
+            </p>
+          </div>
 
-    <div className="flex flex-wrap gap-4 text-sm text-white/80">
-      <a href="#menu" className="hover:text-lime-300">
-        Menu
-      </a>
-      <a href="#about" className="hover:text-lime-300">
-        About
-      </a>
-      <a href="#location" className="hover:text-lime-300">
-        Location
-      </a>
-      <a
-        href="https://www.facebook.com/gulfportnutrition/"
-        target="_blank"
-        rel="noreferrer"
-        className="hover:text-lime-300"
-      >
-        Facebook
-      </a>
-    </div>
-  </div>
+          <div className="flex flex-wrap gap-4 text-sm text-white/80">
+            <a href="#menu" className="hover:text-lime-300">
+              Menu
+            </a>
+            <a href="#about" className="hover:text-lime-300">
+              About
+            </a>
+            <a href="#location" className="hover:text-lime-300">
+              Location
+            </a>
+            <a
+              href="https://www.facebook.com/gulfportnutrition/"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-lime-300"
+            >
+              Facebook
+            </a>
+          </div>
+        </div>
 
-  <div className="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-sm text-white/50">
-    © {new Date().getFullYear()} Gulfport Nutrition. Website built by Michael Sullivan.
-  </div>
-</footer>
+        <div className="mx-auto mt-8 max-w-7xl border-t border-white/10 pt-6 text-sm text-white/50">
+          © {new Date().getFullYear()} Gulfport Nutrition. Website built by
+          Michael Sullivan.
+        </div>
+        <a
+          href="https://www.facebook.com/gulfportnutrition/"
+          target="_blank"
+          rel="noreferrer"
+          className="fixed bottom-6 right-6 z-50 rounded-full bg-green-700 px-6 py-3 font-semibold text-white shadow-lg transition hover:scale-105 hover:bg-green-800"
+        >
+          Order Now
+        </a>
+      </footer>
     </main>
   );
 }
