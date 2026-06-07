@@ -84,6 +84,62 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Drinks */}
+<section className="bg-white py-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="mx-auto mb-12 max-w-2xl text-center">
+      <p className="mb-3 text-sm font-bold uppercase tracking-wide text-green-700">
+        Local Favorites
+      </p>
+
+      <h2 className="text-4xl font-bold text-gray-950">
+        Fresh shakes and loaded teas made for Gulfport energy.
+      </h2>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      {[
+        {
+          title: "Loaded Energy Teas",
+          desc: "Bright, refreshing teas made for clean energy and hydration.",
+          image: "/images/drink-1.jpg",
+        },
+        {
+          title: "Protein Shakes",
+          desc: "Smooth, filling shakes packed with flavor and protein.",
+          image: "/images/drink-2.jpg",
+        },
+        {
+          title: "Wellness Combos",
+          desc: "Pair your favorite tea and shake for a complete daily boost.",
+          image: "/images/drink-3.jpg",
+        },
+      ].map((item) => (
+        <div
+          key={item.title}
+          className="group overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+        >
+          <div className="h-72 overflow-hidden bg-green-100">
+            <img
+              src={item.image}
+              alt={item.title}
+              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+            />
+          </div>
+
+          <div className="p-6">
+            <h3 className="mb-2 text-2xl font-bold text-green-900">
+              {item.title}
+            </h3>
+
+            <p className="text-gray-600">{item.desc}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* Menu */}
       <section id="menu" className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6">
@@ -197,7 +253,46 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Gallery */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mb-10 text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-wide text-green-700">
+              Fresh Daily
+            </p>
 
+            <h2 className="text-4xl font-bold text-gray-950">
+              Stop in for shakes, teas, and good energy.
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="overflow-hidden rounded-3xl">
+              <img
+                src="/images/drink-1.jpg"
+                alt="Drink 1"
+                className="h-80 w-full object-cover"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-3xl">
+              <img
+                src="/images/drink-2.jpg"
+                alt="Drink 2"
+                className="h-80 w-full object-cover"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-3xl">
+              <img
+                src="/images/drink-3.jpg"
+                alt="Drink 3"
+                className="h-80 w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Location */}
       <section id="location" className="bg-gray-100 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 md:grid-cols-2 md:items-center">
