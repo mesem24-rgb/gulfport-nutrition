@@ -6,7 +6,7 @@ export default function Logo() {
       </div>
 
       <div>
-        <p className="font-bold text-green-900">Gilfport Nutrition</p>
+        <p className="font-bold text-green-900">Gulfport Nutrition</p>
         <p className="text-xs text-gray-500">
           Healthy Energy • Better Nutrition
         </p>

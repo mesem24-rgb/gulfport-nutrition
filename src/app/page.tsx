@@ -85,106 +85,106 @@ export default function Home() {
       </section>
 
       {/* Featured Drinks */}
-<section className="bg-white py-20">
-  <div className="mx-auto max-w-7xl px-6">
-    <div className="mx-auto mb-12 max-w-2xl text-center">
-      <p className="mb-3 text-sm font-bold uppercase tracking-wide text-green-700">
-        Local Favorites
-      </p>
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-wide text-green-700">
+              Local Favorites
+            </p>
 
-      <h2 className="text-4xl font-bold text-gray-950">
-        Fresh shakes and loaded teas made for Gulfport energy.
-      </h2>
-    </div>
-
-    <div className="grid gap-6 md:grid-cols-3">
-      {[
-        {
-          title: "Loaded Energy Teas",
-          desc: "Bright, refreshing teas made for clean energy and hydration.",
-          image: "/images/drink-1.jpg",
-        },
-        {
-          title: "Protein Shakes",
-          desc: "Smooth, filling shakes packed with flavor and protein.",
-          image: "/images/drink-2.jpg",
-        },
-        {
-          title: "Wellness Combos",
-          desc: "Pair your favorite tea and shake for a complete daily boost.",
-          image: "/images/drink-3.jpg",
-        },
-      ].map((item) => (
-        <div
-          key={item.title}
-          className="group overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
-        >
-          <div className="h-72 overflow-hidden bg-green-100">
-            <img
-              src={item.image}
-              alt={item.title}
-              className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-            />
+            <h2 className="text-4xl font-bold text-gray-950">
+              Fresh shakes and loaded teas made for Gulfport energy.
+            </h2>
           </div>
 
-          <div className="p-6">
-            <h3 className="mb-2 text-2xl font-bold text-green-900">
-              {item.title}
-            </h3>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                title: "Loaded Energy Teas",
+                desc: "Bright, refreshing teas made for clean energy and hydration.",
+                image: "/images/drink-1.jpg",
+              },
+              {
+                title: "Protein Shakes",
+                desc: "Smooth, filling shakes packed with flavor and protein.",
+                image: "/images/drink-2.jpg",
+              },
+              {
+                title: "Wellness Combos",
+                desc: "Pair your favorite tea and shake for a complete daily boost.",
+                image: "/images/drink-3.jpg",
+              },
+            ].map((item) => (
+              <div
+                key={item.title}
+                className="group overflow-hidden rounded-3xl border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                <div className="h-72 overflow-hidden bg-green-100">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                  />
+                </div>
 
-            <p className="text-gray-600">{item.desc}</p>
+                <div className="p-6">
+                  <h3 className="mb-2 text-2xl font-bold text-green-900">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-gray-600">{item.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
-{/* Testimonials */}
-<section className="bg-lime-50 py-20">
-  <div className="mx-auto max-w-7xl px-6">
-    <div className="mx-auto mb-12 max-w-2xl text-center">
-      <p className="mb-3 text-sm font-bold uppercase tracking-wide text-green-700">
-        Community Love
-      </p>
+      {/* Testimonials */}
+      <section className="bg-lime-50 py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto mb-12 max-w-2xl text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-wide text-green-700">
+              Community Love
+            </p>
 
-      <h2 className="text-4xl font-bold text-gray-950">
-        A local spot people can feel good about visiting.
-      </h2>
-    </div>
+            <h2 className="text-4xl font-bold text-gray-950">
+              A local spot people can feel good about visiting.
+            </h2>
+          </div>
 
-    <div className="grid gap-6 md:grid-cols-3">
-      {[
-        {
-          quote:
-            "Great drinks, friendly service, and the perfect stop when I need energy for the day.",
-          name: "Local Customer",
-        },
-        {
-          quote:
-            "The loaded teas are refreshing and the atmosphere is always positive.",
-          name: "Gulfport Guest",
-        },
-        {
-          quote:
-            "Love having a healthy option nearby for shakes, teas, and wellness motivation.",
-          name: "Repeat Visitor",
-        },
-      ].map((item) => (
-        <div
-          key={item.quote}
-          className="rounded-3xl bg-white p-6 shadow-sm"
-        >
-          <p className="mb-4 text-xl font-bold text-yellow-500">★★★★★</p>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              {
+                quote:
+                  "Great drinks, friendly service, and the perfect stop when I need energy for the day.",
+                name: "Local Customer",
+              },
+              {
+                quote:
+                  "The loaded teas are refreshing and the atmosphere is always positive.",
+                name: "Gulfport Guest",
+              },
+              {
+                quote:
+                  "Love having a healthy option nearby for shakes, teas, and wellness motivation.",
+                name: "Repeat Visitor",
+              },
+            ].map((item) => (
+              <div
+                key={item.quote}
+                className="rounded-3xl bg-white p-6 shadow-sm"
+              >
+                <p className="mb-4 text-xl font-bold text-yellow-500">★★★★★</p>
 
-          <p className="mb-6 text-gray-700">&ldquo;{item.quote}&rdquo;</p>
+                <p className="mb-6 text-gray-700">&ldquo;{item.quote}&rdquo;</p>
 
-          <p className="font-semibold text-green-900">— {item.name}</p>
+                <p className="font-semibold text-green-900">— {item.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Menu */}
       <section id="menu" className="bg-white py-20">
@@ -431,8 +431,41 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Mobile Action Bar */}
+      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 bg-white p-3 shadow-lg md:hidden">
+        <div className="grid grid-cols-3 gap-2 text-center text-sm font-semibold">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=15456+Dedeaux+Rd+Gulfport+MS+39503"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-green-700 px-3 py-3 text-white"
+          >
+            Directions
+          </a>
+
+          <a
+            href="https://www.facebook.com/gulfportnutrition/"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-lime-200 px-3 py-3 text-green-950"
+          >
+            Facebook
+          </a>
+
+          <a
+            href="https://www.facebook.com/gulfportnutrition/"
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-green-950 px-3 py-3 text-white"
+          >
+            Order
+          </a>
+        </div>
+      </div>
+
       {/* Footer */}
-      <footer className="bg-green-950 px-6 py-10 text-white">
+      <footer className="bg-green-950 px-6 pb-28 pt-10 text-white md:pb-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <h3 className="text-xl font-bold">Gulfport Nutrition</h3>
