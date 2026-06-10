@@ -140,6 +140,52 @@ export default function Home() {
   </div>
 </section>
 
+{/* Testimonials */}
+<section className="bg-lime-50 py-20">
+  <div className="mx-auto max-w-7xl px-6">
+    <div className="mx-auto mb-12 max-w-2xl text-center">
+      <p className="mb-3 text-sm font-bold uppercase tracking-wide text-green-700">
+        Community Love
+      </p>
+
+      <h2 className="text-4xl font-bold text-gray-950">
+        A local spot people can feel good about visiting.
+      </h2>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      {[
+        {
+          quote:
+            "Great drinks, friendly service, and the perfect stop when I need energy for the day.",
+          name: "Local Customer",
+        },
+        {
+          quote:
+            "The loaded teas are refreshing and the atmosphere is always positive.",
+          name: "Gulfport Guest",
+        },
+        {
+          quote:
+            "Love having a healthy option nearby for shakes, teas, and wellness motivation.",
+          name: "Repeat Visitor",
+        },
+      ].map((item) => (
+        <div
+          key={item.quote}
+          className="rounded-3xl bg-white p-6 shadow-sm"
+        >
+          <p className="mb-4 text-xl font-bold text-yellow-500">★★★★★</p>
+
+          <p className="mb-6 text-gray-700">&ldquo;{item.quote}&rdquo;</p>
+
+          <p className="font-semibold text-green-900">— {item.name}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* Menu */}
       <section id="menu" className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6">
