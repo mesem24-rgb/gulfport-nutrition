@@ -39,48 +39,16 @@ export default function Home() {
                 Get Directions
               </a>
             </div>
+            
           </div>
 
-          <div className="rounded-[2rem] bg-white/15 p-6 shadow-2xl backdrop-blur">
-            <div className="rounded-[1.5rem] bg-white p-8 text-gray-900">
-              <p className="mb-2 text-sm font-bold uppercase tracking-wide text-green-700">
-                Today&apos;s Focus
-              </p>
-
-              <h2 className="mb-4 text-3xl font-bold">
-                Shakes. Teas. Community.
-              </h2>
-
-              <div className="space-y-4">
-                <div className="rounded-xl bg-green-50 p-4">
-                  <p className="font-semibold text-green-900">
-                    Meal replacement shakes
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Protein-packed and customizable.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-lime-50 p-4">
-                  <p className="font-semibold text-green-900">
-                    Loaded energy teas
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Refreshing flavor with clean energy.
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-yellow-50 p-4">
-                  <p className="font-semibold text-green-900">
-                    Wellness challenges
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    Accountability, goals, and local support.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div className="overflow-hidden rounded-[2rem] shadow-2xl">
+  <img
+    src="/images/hero.jpg"
+    alt="Gulfport Nutrition"
+    className="h-full w-full object-cover"
+  />
+</div>
         </div>
       </section>
 
