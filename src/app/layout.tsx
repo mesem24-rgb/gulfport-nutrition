@@ -34,7 +34,31 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Gulfport Nutrition",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "15456 Dedeaux Rd",
+                addressLocality: "Gulfport",
+                addressRegion: "MS",
+                postalCode: "39503",
+                addressCountry: "US",
+              },
+              url: "https://gulfport-nutrition.vercel.app",
+              sameAs: ["https://www.facebook.com/gulfportnutrition/"],
+              openingHours: ["Mo-Fr 06:30-17:30", "Sa 10:00-14:00"],
+            }),
+          }}
+        />
+
+        {children}
+      </body>
     </html>
   );
 }
